@@ -1,0 +1,16 @@
+.calculator{
+    width: 22rem;
+    display: flex;
+    margin:1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color:  #333333;
+    font-family:Arial;
+    border-radius: 5px;
+    background:linear-gradient(to bottom, 
+    #69FF97 5%,#00E4FF 100%);
+    -webkit-box-shadow: 6px -1px 36px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px -1px 36px 0px rgba(0,0,0,0.75);
+box-shadow: 6px -1px 36px 0px rgba(0,0,0,0.75);
+}
