@@ -90,6 +90,7 @@ const App = () => {
   };
 
   const onClickTask = (type,value) => {
+
     switch(type){
       case 'number': fnCurrentNumber(value);break;
       case 'decimal': fnDecimal(value);break;
