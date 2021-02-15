@@ -63,14 +63,17 @@ const App = () => {
   };
   const fnCalculation = () => {
     if(operator !== ''){
+      let num1 = number1.includes('.') ? parseFloat(number1) : parseInt(number1);
+      let num2 = number2.includes('.') ? parseFloat(number2) : parseInt(number2);
+
       let number2 = parseFloat(currentNumber);
       let total=0;
       switch(operator){
-        case "+": total = parseFloat(number1) + parseFloat(number2);break;
-        case "-": total = number1 - number2;break;
-        case "*": total = number1 * number2;break;
-        case "/": if(number2 !== 0){total = number1 / number2;}
-                  else{window.alert()("The number can not be devided by 0");} break;
+        case "+": total = num1 + num2;break;
+        case "-": total = num1 - num2;break;
+        case "*": total = num1 * num2;break;
+        case "/": if(num2 !== 0){total = num1 / num2;}
+                  else{window.alert("The number can not be devided by 0");} break;
         default: break;
       }
       setCurrentNumber(total);
