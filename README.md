@@ -17,6 +17,9 @@ This section should list any major frameworks that you built your project using.
 * [HTML5](https://www.w3schools.com/html/)
 * [CSS3](https://css-tricks.com/)
 
+### Prerequisites
+
+* [Node.js](https://nodejs.org/en/download/)
 
 ## Getting Started
 
