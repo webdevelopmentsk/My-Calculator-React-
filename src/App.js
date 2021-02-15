@@ -63,10 +63,9 @@ const App = () => {
   };
   const fnCalculation = () => {
     if(operator !== ''){
-      let num1 = number1.includes('.') ? parseFloat(number1) : parseInt(number1);
-      let num2 = number2.includes('.') ? parseFloat(number2) : parseInt(number2);
+      let num1 = number1.toString().includes('.') ? parseFloat(number1) : parseInt(number1);
+      let num2 = currentNumber.toString().includes('.') ? parseFloat(currentNumber) : parseInt(currentNumber);
 
-      let number2 = parseFloat(currentNumber);
       let total=0;
       switch(operator){
         case "+": total = num1 + num2;break;
